@@ -56,13 +56,20 @@ void reverse(int num[], int size)
 	}
 }
 void sortAscend(int num[], int size)
-{	for(int i = 0; i < size -1; ++i)
-	for (int i = 0; i < size - 1; ++i)
+{
+	int flag = 1;
+	int temp = 0;
+	for (int i = 0; i < size - 1 && flag == 1; ++i) 
 	{
+		for (int j = 0; j < size - 1; ++j)
 		{
-			if (num[i] > num[i + 1])
-				num[i] = num[i + 1];
-			num[i + 1] = temp;
+			if (num[j] > num[j + 1]) 
+			{
+				temp = num[j];
+				num[j] = num[j + 1];
+				num[j + 1] = temp;
+				flag = 1;
+			}
 		}
 	}
 }
