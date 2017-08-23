@@ -1,5 +1,6 @@
 #include "Student.h"
 #include <iostream>
+#include <cmath>
 using namespace std;
 void printStudent(Student student)
 {
@@ -13,7 +14,7 @@ int average(Student num[], int size)
 	int value;
 	for(int i = 0; i < size; i++)
 	{
-		value += num[i];
+		value =+ num[i];
 	}
 	return value / size; 
 }

@@ -4,7 +4,7 @@ struct piggybank
 	int dollarBills;
 	int twoBills;
 	int fiveDollar;
-	int quarts;
+	int quarters;
 	int dimes;
 	int nickels;
 	int pennies;
