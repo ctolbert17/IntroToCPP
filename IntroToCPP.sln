@@ -21,6 +21,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "8-Structures", "8-Structure
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "9-AppStateManagement", "9-Classes\9-Classes.vcxproj", "{F5A50787-8485-4454-B233-439789C5B17C}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "10-C-Strings", "C Strings\C Strings.vcxproj", "{8FC9FB29-87DB-4841-B5CE-E064F4DFD63D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -121,6 +123,16 @@ Global
 		{F5A50787-8485-4454-B233-439789C5B17C}.Release|x64.Build.0 = Release|x64
 		{F5A50787-8485-4454-B233-439789C5B17C}.Release|x86.ActiveCfg = Release|Win32
 		{F5A50787-8485-4454-B233-439789C5B17C}.Release|x86.Build.0 = Release|Win32
+		{8FC9FB29-87DB-4841-B5CE-E064F4DFD63D}.Debug|Any CPU.ActiveCfg = Debug|Win32
+		{8FC9FB29-87DB-4841-B5CE-E064F4DFD63D}.Debug|x64.ActiveCfg = Debug|x64
+		{8FC9FB29-87DB-4841-B5CE-E064F4DFD63D}.Debug|x64.Build.0 = Debug|x64
+		{8FC9FB29-87DB-4841-B5CE-E064F4DFD63D}.Debug|x86.ActiveCfg = Debug|Win32
+		{8FC9FB29-87DB-4841-B5CE-E064F4DFD63D}.Debug|x86.Build.0 = Debug|Win32
+		{8FC9FB29-87DB-4841-B5CE-E064F4DFD63D}.Release|Any CPU.ActiveCfg = Release|Win32
+		{8FC9FB29-87DB-4841-B5CE-E064F4DFD63D}.Release|x64.ActiveCfg = Release|x64
+		{8FC9FB29-87DB-4841-B5CE-E064F4DFD63D}.Release|x64.Build.0 = Release|x64
+		{8FC9FB29-87DB-4841-B5CE-E064F4DFD63D}.Release|x86.ActiveCfg = Release|Win32
+		{8FC9FB29-87DB-4841-B5CE-E064F4DFD63D}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
