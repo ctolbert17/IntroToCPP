@@ -3,12 +3,15 @@
 #include <time.h>
 #include <stdlib.h>
 #include <Windows.h>
+
 using namespace std;
 
-std::string words[] = { "hello", "world", "because", "buzzard", "espionage","subway", "xylophone", "zip", "zodiac", "yacht", "jukebox", "aardvark", "numbskull", "khaki", "mnemonic" };
+std::string words[] = { "hello", "world", "because", "buzzard", "espionage","subway", "xylophone", "zip", "zodiac", "yacht", "jukebox", "aardvark", "numbskull", "khaki", "mnemonic", "quipping", "bump", "bamp", "waxes", "quaffing", "queuing", "skydiving" };
 
 void user_guess(std::string &current, std::string &word) {
-	std::cout << "Status" << current << std::endl;
+	std::cout << "" << std::endl;
+	Sleep(600);
+	std::cout << "Status: " << current << std::endl;
 	char guess;
 	std::cin >> guess;
 	if (word.find(guess) != std::string::npos &&
@@ -29,20 +32,19 @@ int main()
 {
 	//Begin Title Sequence
 	{
-
 		SetConsoleTitle("HangMan!");
 		system("color E");
 
 		//Title Screen Sequence
-		std::cout << "Welcome" << endl;
+		std::cout << "Welcome \n" << endl;
 		Sleep(1000);
-		std::cout << "To..." << endl;
+		std::cout << "To... \n" << endl;
 		Sleep(1500);
 		std::cout << "            _______  _        _______  _______  _______  _        _ " << endl;
 		Sleep(205);
-		std::cout << "  |\\     /|(  ___  )( (    /|(  ____ \(       )(  ___  )( (    /|( )" << endl;
+		std::cout << "  |\\     /|(  ___  )( (    /|(  ____ \ (       )(  ___  )( (    /|( )" << endl;
 		Sleep(205);
-		std::cout << "  | )   ( || (   ) ||  \\  ( || (    \/| () () || (   ) ||  \\  ( || |" << endl;
+		std::cout << "  | )   ( || (   ) ||  \\  ( || (    \ /| () () || (   ) ||  \\  ( || |" << endl;
 		Sleep(205);
 		std::cout << "  | (___) || (___) ||   \\ | || |      | || || || (___) ||   \\ | || |" << endl;
 		Sleep(205);
@@ -59,19 +61,23 @@ int main()
 		//Begin rules/expalnation//
 
 		std::cout << "Welcome to HangMan! A game of word guessing. " << std::endl;
-		Sleep(1300);
-		
+		Sleep(1900);
 		std::cout << "With a more violent ending should you LOSE!" << std::endl;
-		Sleep(1800);
-		std::cout << "The rules are simple: " << std::endl;
-		Sleep(1200);
+		Sleep(1900);
+		std::cout << "The rules are simple: \n" << std::endl;
+		Sleep(1900);
 		std::cout << "1. Guess the word I give out in *'s \n";
-		Sleep(1000);
+		Sleep(1900);
 		std::cout << "2. As the words progressively get harder to guess, think outside the box ;) \n";
-		Sleep(1600);
-		std::cout << "3. Dont mess up!!" << std::endl;
-		Sleep(1000);
-		std::cout << "" << std::endl;
+		Sleep(1900);
+		std::cout << "3. Keep in mind the words in this game are NOT case sensitive! \n";
+		Sleep(1900);
+		std::cout << "4. Dont mess up!!" << std::endl;
+		Sleep(1900);
+		std::cout << "5. HAVE FUN AND DON'T HANG THE MAN!!!\n";
+		Sleep(2000);
+
+		//End Rules/Explanation
 	}
 
 	for (std::string word : words) {
@@ -87,7 +93,7 @@ int main()
 				std::cout << "Remaining guesses: " << remaining << std::endl;
 			}
 			if (current == word) {
-				std::cout << "You won! Nice job!" << std::endl;
+				std::cout << "You did it! the word was: " << word <<  "Nice job!" << std::endl;
 				broke = true;
 				break;
 			}
@@ -100,5 +106,3 @@ int main()
 	std::cout << "Thanks for playing! You've proven yourself a true hero and did not hang the man :)" << std::endl;
 	return 0;
 }
-
-
