@@ -4,42 +4,42 @@
 #include <algorithm>
 using namespace std;
 
-//void addStrings(char dest[], int size, char src1[], char src2[]);
-//{
-//	
-//	 //copies data from src1 into the dst buffer
-//	strcpy_s(dst, size, src1);
-//	//concatenates data from src2 into the dst buffer
-//	strcat_s(dst, size, src2);
-//
-// 	//result should be src1+src2 
-//}
+void addStrings(char dest[], int size, char src1[], char src2[]);
+{
+	
+	 copies data from src1 into the dst buffer
+	strcpy_s(dst, size, src1);
+	concatenates data from src2 into the dst buffer
+	strcat_s(dst, size, src2);
 
-//void main()
-//{
-//	//definition
-//	char buffer[80] = {0};
-//
-//	//	instantiate 
-//	char cstring[] = "Dinos are cool!";
-//
-//
-//	//	assignment
-//	/*buffer = "String";*/
-//
-//	strcpy_s(buffer, "String"); //Right: name, Left: Value
-//
-//	//Length
-//	int length = strlen(buffer);
-//
-//	// concatenation-put two things together
-//	strcat_s(buffer, 80, cstring);
-//
-//	//Compare
-//	
-//	int result = strcmp(buffer, cstring);
-//
-//}
+ 	result should be src1+src2 
+}
+
+void main()
+{
+	/*definition*/
+	char buffer[80] = {0};
+
+		/*instantiate */
+	char cstring[] = "Dinos are cool!";
+
+
+		/*assignment*/
+	/*buffer = "String";*/
+
+	strcpy_s(buffer, "String"); //Right: name, Left: Value
+
+	//Length
+	int length = strlen(buffer);
+
+	// concatenation-put two things together
+	strcat_s(buffer, 80, cstring);
+
+	//Compare
+	
+	int result = strcmp(buffer, cstring);
+
+}
 int main()
 {
 	char name[23];
